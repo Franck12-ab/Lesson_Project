@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvWelcomeBack"
+        android:layout_width="300dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="143dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLsnRemain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCompletion"
+        android:layout_width="270dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="54dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#1B1919"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLsnRemain"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvWelcomeBack" />
+
+    <TextView
+        android:id="@+id/tvLsnCompleted"
+        android:layout_width="228dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="81dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#1B1919"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnContinueWelcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLsnRemain" />
+
+    <TextView
+        android:id="@+id/tvLsnRemain"
+        android:layout_width="244dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="258dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="21dp"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#1B1919"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvLsnCompleted"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnContinueWelcome"
+        android:layout_width="234dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="24dp"
+        android:text="Continue"
+        app:layout_constraintBottom_toTopOf="@+id/btnDeleteReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLsnCompleted"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnDeleteReset"
+        android:layout_width="270dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginEnd="75dp"
+        android:text="Delete all data and reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnContinueWelcome"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
